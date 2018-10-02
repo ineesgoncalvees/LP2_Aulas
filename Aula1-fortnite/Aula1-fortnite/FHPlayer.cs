@@ -7,6 +7,13 @@
         private double hitPoints;
         private double shield;
 
+        public static double maxHitPoints { get; set; } = 100;
+
+        public static void Apocalipse()
+        {
+            maxHitPoints /= 2;
+        }
+
         public FHPlayer()
         {
             equipedWeapon = "picareta";

@@ -18,6 +18,8 @@ namespace Aula1_fortnite
             Console.WriteLine("Shield before: " + player1.GetShield());
             player1.SetShield(50);
             Console.WriteLine("Shield after: " + player1.GetShield());
+
+            FHPlayer.maxHitPoints = 50;
         }
     }
 }
