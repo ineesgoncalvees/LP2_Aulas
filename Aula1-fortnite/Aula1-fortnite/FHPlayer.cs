@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Aula1_fortnite
+﻿namespace Aula1_fortnite
 {
     class FHPlayer
     {
         
-        public string equipedWeapon;
-        public double hitPoints;
-        public double shield;
+        private string equipedWeapon;
+        private double hitPoints;
+        private double shield;
 
         public FHPlayer()
         {
@@ -24,6 +18,16 @@ namespace Aula1_fortnite
         {
             this.equipedWeapon = equipedWeapon;
             this.hitPoints = hitPoints;
+            this.shield = shield;
+        }
+
+        public double GetShield()
+        {
+            return shield;
+        }
+
+        public void SetShield(double shield)
+        {
             this.shield = shield;
         }
 
