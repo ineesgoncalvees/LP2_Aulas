@@ -14,9 +14,16 @@ namespace ExceptionTest
                 int i = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine($"Numero inserido:{i}");
             }
-            catch(Exception e)
+            catch (FormatException e)
             {
-                Console.WriteLine(" Ocorreu o seguinte problema: " +e.Message);
+                Console.WriteLine(" Ocorreu o seguinte problema: " + e.Message);
+            }
+            catch (OverflowException e)
+            {
+                Console.WriteLine(" Ocorreu o seguinte problema: " + e.Message);
+            }            catch (Exception e)
+            {
+                Console.WriteLine(" Ocorreu o seguinte problema: " + e.Message);
             }
         }
     }
